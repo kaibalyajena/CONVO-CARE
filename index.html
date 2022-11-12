@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convo-care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <section class="showcase">
+            <header>
+                <div>
+                <img src="logo.png" alt="logo" width="50px" height="50px">
+                <h2 class="logo">CONVO-CARE</h2>
+                </div>
+                <div class="toggle"></div>
+            </header>
+            <video width="100%" height="100%" loop muted autoplay="autoplay">
+                <source src="video3.mp4">
+            </video>
+            <div class="overlay">
+    
+            </div>
+            <div class="text">
+                <h2>It's never over</h2>
+                <p>everyone has a second chance and everything will cure with time.
+                    don't hold on but try to move on. A better future awaits you.
+                </p>
+                <a href="login.html">login</a>
+            </div>
+            <ul class="social">
+                <li><a href="https://kaibalyajena.github.io/html-and-css-personal-website/"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+                <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+                <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+              </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="#">User Profile</a></li>
+                <li><a href="question.html">Questionnaire</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.toggle');
+            const showcase = document.querySelector('.showcase');
+    
+            menuToggle.addEventListener('click',() => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</body>
+</html>
