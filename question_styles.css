@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image:url("back2.png");
+    background-size: cover;
+    overflow: hidden;
+    margin-left: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 430px 430px 430px ;
+    grid-template-rows: 220px 220px 220px 100px;
+    padding-left: 80px;
+    padding-top: 30px;
+
+}
+.card{
+    margin-bottom: 50px;
+    margin-right: 80px;
+    padding: 10px;
+    grid-template-areas: "text";
+    font-family: 'Poppins',sans-serif;
+    border-radius: 18px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.form .inputbox{
+    width: 100%;
+    margin-top: 20px;
+}
+.form .inputbox input{
+    width: 100%;
+    background-origin: rgba(225,225,255,0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.stylegood{
+    background-origin: rgba(225,225,255,0.2);
+    border: none;
+    outline: none;
+    width: 240px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+.questions{
+    padding-left: 30px;
+}
+.profile_photo{
+    margin-left: 90px;
+}
+
+a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+a:hover
+{
+  letter-spacing: 6px;
+}
