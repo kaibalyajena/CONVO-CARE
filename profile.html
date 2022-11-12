@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="profile_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+</head>
+<body>
+    <span class="main_bg"></span>
+
+
+    <!-- ===== ===== Main-Container ===== ===== -->
+    <div class="container">
+
+        <!-- ===== ===== Header/Navbar ===== ===== -->
+        <header>
+            <div class="brandLogo">
+                <!-- <figure><img src="web_logo.jpg" alt="logo" width="40px" height="40px"></figure> -->
+                <span style="font-size: 4rem;">Hello! Mark</span>
+            </div>
+        </header>
+
+
+        <!-- ===== ===== User Main-Profile ===== ===== -->
+        <section class="userProfile card">
+            <div class="profile">
+                <figure><img src="profile_photo.png" alt="profile" width="250px" height="250px"></figure>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== Work & Skills Section ===== ===== -->
+        <section class="work_skills card">
+
+            <!-- ===== ===== Work Contaienr ===== ===== -->
+            <div class="work">
+                <h1 class="heading">address</h1>
+                <div class="primary">
+                    <h1>New York</h1>
+                    <span>Primary</span>
+                    <p>170 William Street <br> New York, NY 10038-212-315-51</p>
+                </div>
+
+                <div class="secondary">
+                    <h1>California</h1>
+                    <span>Secondary</span>
+                    <p>S34 E 65th Street <br> New York, CA 10651-78 156-187-60</p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h1 class="heading">probable disorders</h1>
+                <ul>
+                    <li style="--i:0">Anxiety</li>
+                    <li style="--i:1">Depression</li>
+                    <li style="--i:2">OCD</li>
+                    <li style="--i:3">psychosis</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== User Details Sections ===== ===== -->
+        <section class="userDetails card">
+            <div class="userName">
+                <h1 class="name">Mark Holland</h1>
+                <div class="map">
+                    <i class="ri-map-pin-fill ri"></i>
+                    <span>New York, NY</span>
+                </div>
+                <p>Software Engineer</p>
+            </div>
+
+            <div class="rank">
+                <h1 class="heading" style="font-size: 1.5rem;">Threat scale rating</h1>
+                <span>4.8</span>
+                <div class="rating">
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate underrate"></i>
+                </div>
+            </div>
+
+            <div class="btns">
+                <ul>
+                    <li class="sendMsg">
+                        <i class="ri-chat-4-fill ri"></i>
+                        <a href="#">ChatBot</a>
+                    </li>
+
+                    <li class="sendMsg active">
+                        <i class="ri-check-fill ri"></i>
+                        <a href="#">Experts</a>
+                    </li>
+
+                    <li class="sendMsg">
+                        <a href="#">Social</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="timeline_about card">
+            <canvas id="myChart">
+
+            </canvas>
+            
+            
+        </section> 
+    </div>
+    <script>
+        let myChart = document.getElementById("myChart").getContext('2d');
+        let heartchart = new Chart(myChart,{
+            type:'bar',
+            data:{
+                    labels:['recent','1 hour ago','2 hours ago','5 hours ago','10 hours ago','1 day ago'],
+                    datasets:[{
+                        label:'heart rate',borderRadius: 7,
+                        data:[
+                            78,67,88,110,56,72
+                        ],
+                        backgroundColor:'#FF6363'
+                    },{
+                        label:'systolic blood pressure',borderRadius: 7,
+                        data:[
+                            129,112,154,170,111,120
+                        ],
+                        backgroundColor:'#8D8DAA'  
+                    },
+                    {
+                        label:'diastolic blood pressure',borderRadius: 7,
+                        data:[
+                            82,67,98,110,55,80
+                        ],
+                        backgroundColor:'#FFCC8F'  
+                    }
+                    ]
+            },
+            options:{}
+        });
+        
+    </script>
+</body>
+</html>
