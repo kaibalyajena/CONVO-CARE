@@ -31,7 +31,6 @@ section{
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
     animation: animate 10s linear infinite;
-    animation-delay: calc(-1s * var(--i));
 }
 @keyframes animate {
     0%,100%{
@@ -143,6 +142,7 @@ section{
   margin-bottom: 5px;
   border-radius: 40px;
   letter-spacing: 2px;
+  margin-bottom: 1rem;
 }
 
 .forget a{
