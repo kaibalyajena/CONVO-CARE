@@ -17,9 +17,14 @@
 
         <!-- ===== ===== Header/Navbar ===== ===== -->
         <header>
+            <div style="display: flex;">
             <div class="brandLogo">
                 <!-- <figure><img src="web_logo.jpg" alt="logo" width="40px" height="40px"></figure> -->
                 <span style="font-size: 4rem;">Hello! Mark</span>
+            </div>
+            <div>
+            <button class="logout_btn" id="submitData" name="submitData">logout</button>
+            </div>
             </div>
         </header>
 
@@ -113,35 +118,37 @@
             
         </section> 
     </div>
-    <script>
-        let myChart = document.getElementById("myChart").getContext('2d');
-        let heartchart = new Chart(myChart,{
-            type:'bar',
-            data:{
-                    labels:['recent','1 hour ago','2 hours ago','5 hours ago','10 hours ago','1 day ago'],
-                    datasets:[{
-                        label:'heart rate',borderRadius: 7,
-                        data:[
-                            78,67,88,110,56,72
-                        ],
-                        backgroundColor:'#FF6363'
-                    },{
-                        label:'systolic blood pressure',borderRadius: 7,
-                        data:[
-                            129,112,154,170,111,120
-                        ],
-                        backgroundColor:'#8D8DAA'  
-                    },
-                    {
-                        label:'diastolic blood pressure',borderRadius: 7,
-                        data:[
-                            82,67,98,110,55,80
-                        ],
-                        backgroundColor:'#FFCC8F'  
-                    }
-                    ]
-            },
-            options:{}
+    <script src="app2.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCtiSYPiMU1D70kHkFOAfOuwm62wUeGEuA",
+          authDomain: "convo-care.firebaseapp.com",
+          databaseURL: "https://convo-care-default-rtdb.firebaseio.com",
+          projectId: "convo-care",
+          storageBucket: "convo-care.appspot.com",
+          messagingSenderId: "387369842039",
+          appId: "1:387369842039:web:4b4d49b4e34c692fe91d72"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        submitData.addEventListener('click',(e) => {
+            signOut(auth).then(() => {
+                alert("logged out");
+                window.location.replace("index.html")
+            }).catch((error) => {
+                alert(error.message);
+            });
         });
         
     </script>
