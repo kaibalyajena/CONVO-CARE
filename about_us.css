@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    overflow: scroll;
+}
+
+#sec1{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec2{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+#sec3{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+#sec4{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+#top{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+#main{
+    position: relative;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#mid{
+    position: relative;
+    color: rgb(51, 51, 51);
+    font-size:medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#mid2{
+
+    position: relative;
+    color: rgb(51, 51, 51);
+    backdrop-filter: blur(5px);
+    margin-bottom: 10%;
+    margin-top: 10% ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bottom{
+    position: relative;
+    color: rgb(51, 51, 51);
+    font-size:medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

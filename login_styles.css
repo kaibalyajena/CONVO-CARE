@@ -9,6 +9,7 @@
 body{
     overflow: hidden;
     background-image:url("back2.png");
+    z-index: 1;
 }
 section{
     margin-top: 8rem;
@@ -33,6 +34,7 @@ section{
     animation: animate 10s linear infinite;
     animation-delay: calc(-1s * var(--i));
 }
+
 @keyframes animate {
     0%,100%{
         transform: translateY(-40px);
