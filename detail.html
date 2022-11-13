@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="detail_styles.css">
     <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
     <section>
         <div class="box">
@@ -21,16 +22,16 @@
                     <h2>Fill Details</h2>
                     <form id="detail_form">
                         <div class="inputbox">
-                            <input type="text" placeholder="contact 1 name" id="c1name">
+                            <input type="text" placeholder="contact 1 name"  required id="c1name">
                         </div>
                         <div class="inputbox">
-                            <input type="text" placeholder="contact 1 number" id="c1phone">
+                            <input type="text" placeholder="contact 1 number" required id="c1phone">
                         </div>
                         <div class="inputbox">
-                            <input type="text" placeholder="contact 2 name" id="c2name">
+                            <input type="text" placeholder="contact 2 name"  required id="c2name">
                         </div>
                         <div class="inputbox">
-                            <input type="text" placeholder="contact 2 number" id="c2phone">
+                            <input type="text" placeholder="contact 2 number"  required id="c2phone">
                         </div>
                         <div class="inputbox">
                             <input type="text" placeholder="contact 3 name" id="c3name">
@@ -39,14 +40,23 @@
                             <input type="text" placeholder="contact 3 number" id="c3phone">
                         </div>
                         
+                        <div style="display: flex;">
                         <div class="inputbox">
-                            <button type="submit"><a href="login.html" style="text-decoration: none; color:black;">LOGIN</a> </button>
+                        <button class="submitBtn" type="submit"><span class="btnText">Submit</span>
+                        </button>
+                    </div>
+                    <div class="inputbox">
+                            <button><a href="login.html" style="text-decoration: none; color:black;">LOGIN</a> </button>
                         </div>
+                    </div>
                     </form>
                 </div>
             </div>
         </div>
 
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
