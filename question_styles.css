@@ -6,7 +6,7 @@ body{
     align-items: center;
     background-image:url("back2.png");
     background-size: cover;
-    overflow: hidden;
+    overflow: scroll;
     margin-left: 30px;
 }
 .container{
@@ -103,11 +103,18 @@ a:hover
       float: left;
       width: 50%;
     }
-  }
+  } */
   
   @media (min-width: 0px) and (max-width: 767px) {
     .col-sm-12 {
         float: left;
       width: 100%;
     }
-  } */
+    .container{
+        display: inline;
+    
+    }
+    #card{
+        width: 100%;
+    }
+  }
