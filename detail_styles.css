@@ -129,8 +129,10 @@ section{
     letter-spacing: 1px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-.form .inputbox a
+.form .inputbox button
 {
+    border: none;
+    text-decoration: none;
   display: inline-block;
   font-size: 1em;
   background: #fff;
