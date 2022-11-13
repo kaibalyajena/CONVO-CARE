@@ -129,7 +129,7 @@ section{
     letter-spacing: 1px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-.form .inputbox a
+.form .inputbox a,button
 {
   display: inline-block;
   font-size: 1em;
@@ -144,7 +144,7 @@ section{
   letter-spacing: 2px;
 }
 
-.forget a{
+.forget a,button{
     color: #666;
     text-decoration: none;
     font-weight: 600;

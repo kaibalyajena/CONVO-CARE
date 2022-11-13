@@ -21,18 +21,16 @@
                     <h2>Login Form</h2>
                     <form>
                         <div class="inputbox">
-                            <input type="text" placeholder="Username" required>
-
+                            <input type="email" placeholder="email" required id="regemail" name="regemail">
                         </div>
                         <div class="inputbox">
-                            <input type="password" placeholder="Password" required>
+                            <input type="password" placeholder="Password" required id="regpass" name="regpass">
                             
                         </div>
                         <div class="inputbox">
-                            <a href="profile.html">login</a>
-                            
+                            <!-- <a href="detail.html">signup</a>  -->
+                            <button type="button" id="submitData" name="submitData">SIGNUP</button>
                         </div>
-                        </p>
                         <p class="forget">Don't have an account ? <a href="signup.html">Sign up</a>
                         </p>
                     </form>
@@ -40,5 +38,46 @@
             </div>
         </div>
     </section>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCtiSYPiMU1D70kHkFOAfOuwm62wUeGEuA",
+          authDomain: "convo-care.firebaseapp.com",
+          databaseURL: "https://convo-care-default-rtdb.firebaseio.com",
+          projectId: "convo-care",
+          storageBucket: "convo-care.appspot.com",
+          messagingSenderId: "387369842039",
+          appId: "1:387369842039:web:4b4d49b4e34c692fe91d72"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        submitData.addEventListener('click',(e) => {
+            var email=document.getElementById("regemail").value;
+            var password=document.getElementById("regpass").value;
+            signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    alert("login successful");
+    window.location.replace("profile.html");
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
+        });
+      </script>
 </body>
 </html>
