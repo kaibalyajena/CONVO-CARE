@@ -17,7 +17,7 @@ body{
     padding-top: 30px;
 
 }
-.card{
+#card{
     margin-bottom: 50px;
     margin-right: 80px;
     padding: 10px;
@@ -90,3 +90,24 @@ a:hover
 {
   letter-spacing: 6px;
 }
+
+/* @media (min-width: 992px) {
+    .col-lg-4 {
+        float:left;
+      width: 33.33%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+      width: 100%;
+    }
+  } */
